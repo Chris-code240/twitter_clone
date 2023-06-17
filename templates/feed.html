@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <section class="container mx-auto px-2">
+        <div class="flex items-center justify-between py-3">
+            <h1 class="text-3xl font-bold">Home</h1>
+
+            <div>
+                <i class="fa-light fa-sparkles"></i>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="nav bg-white flex items-start space-x-6 py-2">
+            <div>
+                <img src="{{url_for('static',filename='images/christian.webp')}}" class="w-12 rounded-full" alt="">
+            </div>
+            <div class="w-full">
+                <input type="text" class="py-2 w-full focus:outline-none" placeholder="What's happening?">
+                <div class="my-3 flex items-center justify-between w-full ">
+                    <div class="space-x-3 text-blue-500">
+                        <a href=""><i class="fa fa-image text-2xl" ></i></a>
+                        <a href=""><i class="fa fa-gif text-2xl"></i></a>
+                        <a href=""><i class="fa-sharp fa-solid fa-square-poll-horizontal text-2xl"></i></a>
+                        <a href=""><i class="fa-sharp fa-solid fa-face-smile text-2xl"></i></a>
+                    </div>
+                    <button class="float-right w-24 rounded-full py-2 px-2 bg-blue-500 text-white">Tweet</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Feed -->
+
+        <div class="space-y-2 mt-2 pt2 w-full">
+            <!-- post -->
+            <div class="post w-full">
+                <div class="flex items-start space-x-6">
+                    <div>
+                        <img src="{{url_for('static',filename='images/christian.webp')}}" class="w-12 rounded-full" alt="">
+                    </div>
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-gray-500"><b class="text-black">Chris</b> @Real_MarfoChris <sup class="text-black font-bold">.</sup> 3m</p> 
+                            <a href=""><i class="fa fa-chevron-down"></i></a> 
+                        </div>
+                        <!-- Content -->
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eum temporibus iure. Vero asperiores quod architecto recusandae fugit repudiandae, ad porro quas ex. Quaerat, eaque?
+                            <span class="text-blue-500">#lorem</span>
+                        </p>
+                        <div class="flex items-center space-x-6 w-full">
+                            <!-- comment -->
+                            <div class="mr-6  cursor-pointer">
+                                <i class="fa fa-comment-o text-gray-400"></i>23
+                            </div>
+                            <div class="mr-6  cursor-pointer like">
+                                <i class="fa fa-heart-o text-gray-400 cursor-pointer"></i>201
+                            </div>
+                            <div class="mr-6  cursor-pointer text-center">
+                                <i class="fa fa-arrow-up-from-bracket cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- post -->
+            <div class="post w-full">
+                <div class="flex items-start space-x-6">
+                    <div>
+                        <img src="{{url_for('static',filename='images/christian.webp')}}" class="w-12 rounded-full" alt="">
+                    </div>
+                    <div class="space-y-2 w-full">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-gray-500"><b class="text-black">Chris</b> @Real_MarfoChris <sup class="text-black font-bold">.</sup> 3m</p> 
+                            <a href=""><i class="fa fa-chevron-down"></i></a> 
+                        </div>
+                        <!-- Content -->
+                        <p>
+                            <span class="text-blue-500">#Newprofilepic</span>
+                        </p>
+                        <!-- Images -->
+                        <div class="flex items-center flex-wrap w-full h-96 post-images">
+                            <img src="{{url_for('static',filename='images/christian.webp')}}" class="m-1" alt="">
+                        </div>
+                        <div class="flex items-center space-x-6 w-full">
+                            <!-- comment -->
+                            <div class="mr-6  cursor-pointer">
+                                <i class="fa fa-comment-o text-gray-400"></i>23
+                            </div>
+                            <div class="mr-6  cursor-pointer like">
+                                <i class="fa fa-heart-o text-gray-400 cursor-pointer"></i>201
+                            </div>
+                            <div class="mr-6  cursor-pointer text-center">
+                                <i class="fa fa-arrow-up-from-bracket cursor-pointer"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+                        <!-- post -->
+                        <div class="post w-full">
+                            <div class="flex items-start space-x-6">
+                                <div>
+                                    <img src="{{url_for('static',filename='images/christian.webp')}}" class="w-12 rounded-full" alt="">
+                                </div>
+                                <div class="space-y-2 w-full">
+                                    <div class="flex items-center justify-between w-full">
+                                        <p class="text-gray-500"><b class="text-black">Chris</b> @Real_MarfoChris <sup class="text-black font-bold">.</sup> 3m</p> 
+                                        <a href=""><i class="fa fa-chevron-down"></i></a> 
+                                    </div>
+                                    <!-- Content -->
+                                    <p>
+                                       
+                                        <span class="text-blue-500">#Junedumps</span>
+                                    </p>
+                                    <!-- Images -->
+                                    <div class="flex items-center flex-wrap w-full h-96 post-images">
+                                        <img src="{{url_for('static',filename='images/christian.webp')}}" class="m-1" alt="">
+                                        <img src="{{url_for('static',filename='images/christian.webp')}}" class="m-1" alt="">
+                                        <img src="{{url_for('static',filename='images/christian.webp')}}" class="m-1" alt="">
+                                        <img src="{{url_for('static',filename='images/christian.webp')}}" class="m-1" alt="">
+                                        <img src="{{url_for('static',filename='images/christian.webp')}}" class="m-1" alt="">
+                                    </div>
+                                    <div class="flex items-center space-x-6 w-full">
+                                        <!-- comment -->
+                                        <div class="mr-6  cursor-pointer">
+                                            <i class="fa fa-comment-o text-gray-400"></i>23
+                                        </div>
+                                        <div class="mr-6  cursor-pointer like">
+                                            <i class="fa fa-heart-o text-gray-400 cursor-pointer"></i>201
+                                        </div>
+                                        <div class="mr-6  cursor-pointer text-center">
+                                            <i class="fa fa-arrow-up-from-bracket cursor-pointer"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        </div>
+    </section>
+{% endblock %}
